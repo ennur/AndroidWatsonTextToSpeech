@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
     private TextToSpeech initTextToSpeechService(){
         TextToSpeech service = new TextToSpeech();
-        String username = "376e5cea-f20d-45de-8813-921a016b7478";
-        String password = "buhJeqhQsNc7";
+        String username = "<here comes the API user>";
+        String password = "<here comes the API password>";
         service.setUsernameAndPassword(username, password);
         return service;
     }
