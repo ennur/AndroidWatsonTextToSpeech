@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
     private TextToSpeech initTextToSpeechService(){
         TextToSpeech service = new TextToSpeech();
-        String username = "<here comes the API user>";
-        String password = "<here comes the API password>";
+        String username = "376e5cea-f20d-45de-8813-921a016b7478";
+        String password = "buhJeqhQsNc7";
         service.setUsernameAndPassword(username, password);
         return service;
     }
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
             TextToSpeech textToSpeech = initTextToSpeechService();
             streamPlayer = new StreamPlayer();
-            streamPlayer.playStream(textToSpeech.synthesize(text, Voice.EN_MICHAEL).execute());
+            streamPlayer.playStream(textToSpeech.synthesize(editText.getText().toString(), Voice.EN_MICHAEL).execute());
 
             return "text to speech done";
         }
